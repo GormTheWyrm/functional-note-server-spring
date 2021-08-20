@@ -1,2 +1,3 @@
 # simple-note-server-springboot
-Simple server for a note takign application using spring boot and gradle
+Simple server for a note-taking application using spring boot and gradle
+
