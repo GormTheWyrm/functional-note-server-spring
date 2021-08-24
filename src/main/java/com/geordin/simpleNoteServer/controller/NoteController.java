@@ -17,11 +17,10 @@ import static org.springframework.http.HttpStatus.OK;
 public class NoteController {
     private NoteService noteService;
 
+    @Autowired
     public NoteController(NoteService noteService){
         this.noteService = noteService;
     }
-    @Autowired
-
 
 
     @GetMapping("/notes")

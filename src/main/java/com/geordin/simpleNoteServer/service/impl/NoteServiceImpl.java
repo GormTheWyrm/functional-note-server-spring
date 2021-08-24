@@ -13,8 +13,12 @@ import java.util.Optional;
 @Service
 public class NoteServiceImpl implements NoteService {
 
-    @Autowired
+
     private NoteRepo noteRepo;
+    @Autowired
+    public NoteServiceImpl(NoteRepo noteRepo){
+        this.noteRepo = noteRepo;
+    }
 
 
 
