@@ -15,14 +15,14 @@ import static org.springframework.http.HttpStatus.OK;
 @CrossOrigin
 @RestController
 public class NoteController {
-    @Autowired
     private NoteService noteService;
-    //change to NoteRepo Noteservice?
 
-    @GetMapping("/")
-    public String returnHome(){
-        return "This is an API Server, use /notes to see all notes, or /note to add, update or delete a specific note";
-    } //move this to own controller, if needed
+    public NoteController(NoteService noteService){
+        this.noteService = noteService;
+    }
+    @Autowired
+
+
 
     @GetMapping("/notes")
     public ResponseEntity<List<Note>> getAllNotes(){
