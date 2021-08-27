@@ -25,7 +25,7 @@ public class Note {
     @Column
     private String title;
     @Column
-    private String message;
+    private String body;
     //timestamps? //kiss principle
     //no author yet
 
@@ -45,11 +45,11 @@ public class Note {
         this.title = title;
     }
 
-    public String getMessage() {
-        return message;
+    public String getBody() {
+        return body;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setBody(String body) {
+        this.body = body;
     }
 }
